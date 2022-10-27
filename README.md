@@ -1,6 +1,6 @@
 # Streaming Radiance Fields for 3D Video Synthesis
 
-Lingzhi Li, Zhen Shen, Zhongshu Wang, Li Shen,Ping Tan
+Lingzhi Li, Zhen Shen, Zhongshu Wang, Li Shen, Ping Tan
 
 Alibaba Group
 

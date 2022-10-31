@@ -5,6 +5,13 @@ Lingzhi Li, Zhen Shen, Zhongshu Wang, Li Shen, Ping Tan
 Alibaba Group
 
 
+@inproceedings{li2022streamrf,
+      title={Streaming Radiance Fields for 3D Video Synthesis}, 
+      author={Lingzhi Li and Zhen Shen and Zhongshu Wang and Li Shen and Ping Tan},
+      year={2022},
+      booktitle={NeurIPS},
+}
+
 arXiv: <https://arxiv.org/abs/2210.14831>
 
 **Note:**  We will add detailed illustration in the near future.

@@ -20,7 +20,7 @@ arXiv: <https://arxiv.org/abs/2210.14831>
 
 
 ## Dataset
-**Meet Room Dataset**: coming soon
+**Meet Room Dataset**: https://drive.google.com/drive/folders/1lNmQ6_ykyKjT6UKy-SnqWoSlI5yjh3l_?usp=share_link
 
 
 **N3DV Dataset**:

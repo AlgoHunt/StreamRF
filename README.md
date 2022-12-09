@@ -6,12 +6,13 @@ Alibaba Group
 
 Citation:
 ```
-@inproceedings{li2022streamrf,
-      title={Streaming Radiance Fields for 3D Video Synthesis}, 
-      author={Lingzhi Li and Zhen Shen and Zhongshu Wang and Li Shen and Ping Tan},
-      year={2022},
-      booktitle={NeurIPS},
+
+@inproceedings{li2022streaming,
+  title={Streaming Radiance Fields for 3D Video Synthesis},
+  author={Li, Lingzhi and Shen, Zhen and Shen, Li and Tan, Ping and others},
+  booktitle={Advances in Neural Information Processing Systems}
 }
+
 ```
 
 arXiv: <https://arxiv.org/abs/2210.14831>

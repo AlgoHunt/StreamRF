@@ -17,8 +17,6 @@ Citation:
 
 arXiv: <https://arxiv.org/abs/2210.14831>
 
-**Note:**  We will add detailed illustration in the near future.
-
 
 ## Dataset
 **Meet Room Dataset**: https://drive.google.com/drive/folders/1lNmQ6_ykyKjT6UKy-SnqWoSlI5yjh3l_?usp=share_link
@@ -29,6 +27,7 @@ https://github.com/facebookresearch/Neural_3D_Video
 
 ## Training StreamRF
 
+Following the [setup](https://github.com/sxyu/svox2#setup) of the orginal plenoxels' repository 
 
 ### Meet Room Dataset
 
@@ -69,4 +68,13 @@ python train_video_n3dv_full.py -t <log_dir> <data_dir> -c configs/n3dv_full.jso
 ```
 
 ## Testing StreamRF
-coming soon
+
+For Meet Room Dataset：
+```bash
+python render_delta.py -t -t <log_dir> <data_dir> -c configs/meetroom_full.json --batch_size 20000    --pretrained <pretrained_ckpt>  --frame_end 300 --fps 30 --scale 1.0 --performance_mode  
+```
+
+For N3DV Dataset：
+```bash
+python render_delta.py -t -t <log_dir> <data_dir> -c configs/n3dv_full.json --batch_size 20000    --pretrained <pretrained_ckpt>  --frame_end 300 --fps 30 --scale 0.5 --performance_mode  
+```

@@ -51,7 +51,7 @@ For each scene, extract frames from every video, and arrange them into the follo
       └── images
           └── cam[00/01/02/.../20].png
 ```
-We provide the pose_bounds.npy for meetroom dataset in the google drive.
+We provide the pose_bounds.npy of both dataset in the Meet Room Dataset's [link]( https://drive.google.com/drive/folders/1lNmQ6_ykyKjT6UKy-SnqWoSlI5yjh3l_?usp=share_link). If you wants to generate poses_bounds.npy for yourself check DS-NeRF's [repo](https://github.com/dunbar12138/DSNeRF#generate-camera-poses-and-sparse-depth-information-using-colmap-optional).
 
 ### Meet Room Dataset
 

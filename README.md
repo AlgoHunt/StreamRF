@@ -30,16 +30,35 @@ Due to size limit, this is a downsampled video, check full resolution video [her
 **N3DV Dataset**:
 https://github.com/facebookresearch/Neural_3D_Video
 
+
+
+
 ## Training StreamRF
 
 Following the [setup](https://github.com/sxyu/svox2#setup) of the orginal plenoxels' repository 
+
+For each scene, extract frames from every video, and arrange them into the following structure:
+
+```
+<data_dir>
+  ├── 0000  
+  |   ├── pose_bounds.npy  
+  |   └── images
+  |       └── cam[00/01/02/.../20].png
+  ...
+  └── 0299 
+      ├── pose_bounds.npy  
+      └── images
+          └── cam[00/01/02/.../20].png
+```
+We provide the pose_bounds.npy for meetroom dataset in the google drive.
 
 ### Meet Room Dataset
 
 1. Initialize the first frame model
 
 ```bash
-python opt.py  -t <log_dir> <data_dir> -c configs/meetroom_init.json --scale 1.0
+python opt.py  -t <log_dir> <data_dir>/0000 -c configs/meetroom_init.json --scale 1.0
 ```
 
 2. Train the pilot model
@@ -59,7 +78,7 @@ python train_video_n3dv_full.py -t <log_dir> <data_dir> -c configs/meetroom_full
 1. Initialize the first frame model
 
 ```bash
-python opt.py  -t <log_dir> <data_dir> -c configs/init_ablation/n3dv_init.json --offset 500 --scale 0.5 --nosphereinit 
+python opt.py  -t <log_dir> <data_dir>/0000 -c configs/init_ablation/n3dv_init.json --offset 500 --scale 0.5 --nosphereinit 
 ```
 
 2. Train the pilot model
@@ -76,7 +95,7 @@ python train_video_n3dv_full.py -t <log_dir> <data_dir> -c configs/n3dv_full.jso
 
 For Meet Room Dataset：
 ```bash
-python render_delta.py -t -t <log_dir> <data_dir> -c configs/meetroom_full.json --batch_size 20000    --pretrained <pretrained_ckpt>  --frame_end 300 --fps 30 --scale 1.0 --performance_mode  
+python render_delta.py -t -t <log_dir> <data_dir>/0000 -c configs/meetroom_full.json --batch_size 20000    --pretrained <pretrained_ckpt>  --frame_end 300 --fps 30 --scale 1.0 --performance_mode  
 ```
 
 For N3DV Dataset：

@@ -18,6 +18,11 @@ Citation:
 arXiv: <https://arxiv.org/abs/2210.14831>
 
 
+
+https://user-images.githubusercontent.com/28325733/210695784-a309dce8-533b-4c93-b637-da369e2a288e.mp4
+
+Due to size limit, this is a downsampled video, check full resolution video [here](https://github.com/AlgoHunt/VideoHolder/releases/download/StreamRF/StreamRF-Camera.Ready.Video.mp4).
+
 ## Dataset
 **Meet Room Dataset**: https://drive.google.com/drive/folders/1lNmQ6_ykyKjT6UKy-SnqWoSlI5yjh3l_?usp=share_link
 

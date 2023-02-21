@@ -39,15 +39,19 @@ Following the [setup](https://github.com/sxyu/svox2#setup) of the orginal plenox
 
 For each scene, extract frames from every video, and arrange them into the following structure:
 
+```bash
+python prepare_dataset.py <video_dir>
+```
+
 ```
 <data_dir>
   ├── 0000  
-  |   ├── pose_bounds.npy  
+  |   ├── poses_bounds.npy  
   |   └── images
   |       └── cam[00/01/02/.../20].png
   ...
   └── 0299 
-      ├── pose_bounds.npy  
+      ├── poses_bounds.npy  
       └── images
           └── cam[00/01/02/.../20].png
 ```

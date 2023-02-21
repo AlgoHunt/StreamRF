@@ -95,10 +95,10 @@ python train_video_n3dv_full.py -t <log_dir> <data_dir> -c configs/n3dv_full.jso
 
 For Meet Room Dataset：
 ```bash
-python render_delta.py -t -t <log_dir> <data_dir>/0000 -c configs/meetroom_full.json --batch_size 20000    --pretrained <pretrained_ckpt>  --frame_end 300 --fps 30 --scale 1.0 --performance_mode  
+python render_delta.py -t <log_dir> <data_dir>/0000 -c configs/meetroom_full.json --batch_size 20000    --pretrained <pretrained_ckpt>  --frame_end 300 --fps 30 --scale 1.0 --performance_mode  
 ```
 
 For N3DV Dataset：
 ```bash
-python render_delta.py -t -t <log_dir> <data_dir> -c configs/n3dv_full.json --batch_size 20000    --pretrained <pretrained_ckpt>  --frame_end 300 --fps 30 --scale 0.5 --performance_mode  
+python render_delta.py -t <log_dir> <data_dir> -c configs/n3dv_full.json --batch_size 20000    --pretrained <pretrained_ckpt>  --frame_end 300 --fps 30 --scale 0.5 --performance_mode  
 ```

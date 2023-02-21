@@ -268,6 +268,14 @@ torch.manual_seed(20200823)
 np.random.seed(20200823)
 
 factor = 1
+def deploy_dset(dset):
+    dset.c2w = torch.from_numpy(dset.c2w)
+    dset.gt = torch.from_numpy(dset.gt).float()
+    if not dset.is_train_split:
+        dset.render_c2w = torch.from_numpy(dset.render_c2w)
+    else:
+        dset.gen_rays()  
+    return dset
 dset = datasets[args.dataset_type](
                args.data_dir,
                split="train",
@@ -282,6 +290,9 @@ if args.background_nlayers > 0 and not dset.should_use_background:
 
 dset_test = datasets[args.dataset_type](
         args.data_dir, split="test", **config_util.build_data_options(args))
+
+deploy_dset(dset)
+deploy_dset(dset_test)
 
 global_start_time = datetime.now()
 

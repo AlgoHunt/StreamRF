@@ -95,6 +95,14 @@ python train_video_n3dv_pilot.py -t <log_dir> <data_dir> -c configs/n3dv.json --
 python train_video_n3dv_full.py -t <log_dir> <data_dir> -c configs/n3dv_full.json --batch_size 20000   --pretrained  <pretrained_ckpt>  --n_iters 500    --lr_sigma 1.0 --lr_sigma_final 1.0  --lr_sh 1e-2 --lr_sh_final 3e-3 --lr_sigma_decay_steps 500 --lr_sh_decay_steps 300   --frame_end 300 --fps 30 --train_use_all 0 --offset 1500  --scale 0.5 --sh_keep_thres 1.0 --sh_prune_thres 0.2 --performance_mode  --dilate_rate_before 2 --dilate_rate_after 2  --stop_thres 0.01  --compress_saving --save_delta  --apply_narrow_band
 ```
 
+We can change the tv loss weight for better video quality but lower PSNR
+
+3. Train the pilot model
+
+```bash
+python train_video_n3dv_full.py -t <log_dir> <data_dir> -c configs/n3dv_full_hightv.json --batch_size 20000   --pretrained  <pretrained_ckpt>  --n_iters 500    --lr_sigma 1.0 --lr_sigma_final 1.0  --lr_sh 1e-2 --lr_sh_final 3e-3 --lr_sigma_decay_steps 500 --lr_sh_decay_steps 300   --frame_end 300 --fps 30 --train_use_all 0 --offset 1500  --scale 0.5 --sh_keep_thres 1.0 --sh_prune_thres 0.2 --performance_mode  --dilate_rate_before 2 --dilate_rate_after 2  --stop_thres 0.01  --compress_saving --save_delta  --apply_narrow_band
+```bash
+
 ## Testing StreamRF
 
 For Meet Room Dataset：

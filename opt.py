@@ -290,10 +290,8 @@ if args.background_nlayers > 0 and not dset.should_use_background:
 
 dset_test = datasets[args.dataset_type](
         args.data_dir, split="test", **config_util.build_data_options(args))
-
 deploy_dset(dset)
 deploy_dset(dset_test)
-
 global_start_time = datetime.now()
 
 grid = svox2.SparseGrid(reso=reso_list[reso_id],

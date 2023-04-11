@@ -1042,7 +1042,7 @@ if train_frame_num:
 
     grid.density_rms = torch.zeros([1])
     grid.sh_rms = torch.zeros([1])
-    grid.save(os.path.join(args.train_dir, 'ckpt.npz'))
+    grid.save(os.path.join(args.train_dir, 'ckpt_full_final.npz'))
 
 pre_fetch_process.join()
 pre_fetch_process.close()

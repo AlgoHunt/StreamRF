@@ -1,0 +1,17 @@
+{
+    "dataset_type": "llff",
+    "thresh_type": "sigma",
+    "density_thresh": 5,
+    "lambda_tv": 5e-3,
+    "lambda_tv_sh": 5e-2,
+    "lambda_sparsity": 1e-12,
+    "background_brightness": 0.5,
+    "last_sample_opaque": false,
+    "tv_early_only": 0,
+    "llffhold": 100,
+    "eval_every": 1,
+    "print_every": 1,
+    "lr_sigma_delay_steps":0,
+    "lr_sh_delay_steps":0
+
+}

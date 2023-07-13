@@ -7,10 +7,13 @@ Alibaba Group
 Citation:
 ```
 
-@inproceedings{li2022streaming,
-  title={Streaming Radiance Fields for 3D Video Synthesis},
-  author={Li, Lingzhi and Shen, Zhen and Shen, Li and Tan, Ping and others},
-  booktitle={Advances in Neural Information Processing Systems}
+@article{li2022streaming,
+  title={Streaming radiance fields for 3d video synthesis},
+  author={Li, Lingzhi and Shen, Zhen and Wang, Zhongshu and Shen, Li and Tan, Ping},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={13485--13498},
+  year={2022}
 }
 
 ```
@@ -26,6 +29,7 @@ Due to size limit, this is a downsampled video, check full resolution video [her
 ## Dataset
 **Meet Room Dataset**: [ModelScope魔搭](https://www.modelscope.cn/datasets/DAMOXR/dynamic_nerf_meeting_room_dataset/summary) ，[Google Drive](https://drive.google.com/drive/folders/1lNmQ6_ykyKjT6UKy-SnqWoSlI5yjh3l_?usp=share_link)
 
+> We will add more data in ModelScope. (我们会在魔搭里更新更多的数据，敬请关注)
 
 **N3DV Dataset**:
 https://github.com/facebookresearch/Neural_3D_Video
